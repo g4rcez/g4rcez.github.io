@@ -1,0 +1,67 @@
+# Site settings
+title: Vandalvnl Blog
+description: "A little place to post something..."
+baseurl: "" # for test: remove string '/space-jekyll-template' to ''
+url: "" # for test: remove string 'http://victorvoid.github.io' to '' but in production: 'https://yourusername.githu.io'
+
+# User settings
+username: vandalvnl
+user_title: Allan Garcez - FullStack Developer
+email: allan.f.garcez@gmail.com
+twitter_username: ""
+github_username:  vandalvnl
+gplus_username:  ""
+linkedin_public_url:  # Example: For public profile 'www.linkedin.com/in/john-smith', 'john-smith' is your linkedin_public_url
+disqus_username: ""
+profile_picture: https://avatars1.githubusercontent.com/u/22946697?v=4
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+permalink: /:title/
+
+# html minify
+compress_html:
+  clippings: all
+  comments: all
+  endings: []
+  profile: false
+
+# Links to include in menu navigation
+links:
+  section_1:
+    - title: home
+      url: /
+      key_trigger: 1
+    - title: my posts
+      url: /posts
+      key_trigger: 2
+    - title: series
+      url: /series
+      key_trigger: 3
+    - title: tags
+      url: /tags
+      key_trigger: 4
+    - title: about me
+      url: /about
+      key_trigger: 5
+  section_2:
+    - title: github
+      url: http://www.github.com/vandalvnl
+      new_tab: true
+      key_trigger: g
+    - title: search
+      url: ""
+      key_trigger: s #WARNING: search only works with "s"
+
+# projects in header index
+projects:
+  - name: CTF Platform
+    url: https://github.com/ctf-platform/ctf-api
+  - name: sidekicker
+    url: https://github.com/vandalvnl/sidekicker
+  - name: whatcripto
+    url: https://github.com/vandalvnl/whatcripto
+
+# exclude my node related stuff
+exclude: ['package.json', 'src', 'node_modules']
