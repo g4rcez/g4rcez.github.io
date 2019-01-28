@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Lorem Example"
+title:  "Fireshell CTF"
 image: ''
 date:   2019-01-28
 tags:
@@ -41,14 +41,26 @@ function getArray(first, sec) {
     }
     return a;
 }
-const arr = [...getArray('a', 'z'), "#", "_", "-", "1", "2", "3", "4", "5", "6", "7", "8","9", "0", "+", "!", "@", "$", "%",]
-arr.forEach(value => { const key = md5(value); alphabet[key] = value })
-arr.forEach(value => { const key = hash.sha256().update(value).digest('hex'); alphabet[key] = value })
+const arr = [...getArray('a', 'z'), "#", "_", "-", 
+    "1", "2", "3", "4", "5", "6", "7", "8","9", "0", 
+    "+", "!", "@", "$", "%"
+]
+arr.forEach(value => { 
+    const key = md5(value); 
+    alphabet[key] = value 
+})
+arr.forEach(value => { 
+    const key = hash.sha256().update(value).digest('hex'); 
+    alphabet[key] = value 
+})
 arr.map(x => x.toUpperCase()).forEach(value => { const key = md5(value); alphabet[key] = value })
-arr.map(x => x.toUpperCase()).forEach(value => { const key = hash.sha256().update(value).digest('hex');alphabet[key] = value })
-const fs = require('fs'),
-    path = require('path'),
-    filePath = path.join(__dirname, 'submit_the_flag_that_is_here.txt');
+arr.map(x => x.toUpperCase()).forEach(value => { 
+    const key = hash.sha256().update(value).digest('hex');
+    alphabet[key] = value 
+})
+const fs = require('fs');
+const path = require('path');
+const filePath = path.join(__dirname, 'submit_the_flag_that_is_here.txt');
 fs.readFile(filePath, { encoding: 'utf-8' }, function (err, data) {
     if (!err) {
         let flag = ''
