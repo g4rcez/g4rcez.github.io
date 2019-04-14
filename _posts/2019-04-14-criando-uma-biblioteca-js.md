@@ -95,7 +95,7 @@ export default function HexExpand(hex: string) {
 
 Ainda que com a solução apresentada no problema 0, eu tive que copiar e colar muitas regras para diferentes cores, e isso as vezes gerava uma série de erros que acabava demorando para identificar, afinal de contas minha folha de estilo estava com quase 6.3k linhas. Para isso, eu tinha algumas opções, usar uma porrada de lib de node para gerar meu CSS, usar LESS para criar mixins e replicar minhas regras ou...escrever um Shell boladão para atualizar minha folha de estilo das cores, e foi o que eu fiz:
 
-```shellscript
+```bash
 # Gera CSS para texto
 grep "#" colors.json | tr -d ' ",' | sed 's/:/ { color: /g' | sed 's/^[^[:space:]]\+/.&/1' | sed 's/$/ }/g'
 # Gera CSS para texto com o seletor :hover
@@ -107,7 +107,7 @@ grep "#" colors.json | tr -d ' ",' | sed 's/:/ { background-color: /g' | sed 's/
 Com isso feito, joguei tudo num `script.sh` para gerar meu arquivo `colors.css` e pronto, a cada nova cor adicionada no
 meu `colors.json`, eu tinha um novo css de acordo com as cores. Utilizei o `nodemon` para monitorar minhas modificações:
 
-```shellscript
+```bash
 npm i -g nodemon # caso você não tenha nodemon instalado
 nodemon -w colors.json --exec "bash script.sh"
 ```
