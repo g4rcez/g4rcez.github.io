@@ -81,7 +81,7 @@ E o melhor de tudo é que ele fala, basta você incluir os testes no seu projeto
 
 Sim, você pode, e a partir desse momento, você deverá fazer isso. Qual a dificuldade de escrever um teste que irá testar o método de login com a seguinte query:
 
-```
+```javascript
 --- Aqui ta tudo ok
 SELECT * FROM users WHERE login = %s AND %s LIMIT 1
 
