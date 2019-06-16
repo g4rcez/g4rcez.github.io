@@ -118,4 +118,4 @@ export default () => {
 };
 ```
 
-Não tem muito mistério, não é mesmo? Ainda gostaria de apresentar o `useReducer` para casos mais complexos de manipulação de estado, o `useContext` para a ContextAPI e o `useRef`. Mas esse já ficou um pouco maior do que eu queria, então vou encerrar por aqui. Espero que todos tenham entendido e é isso aí << EOF
+Espero que todos tenham entendido e é isso aí << EOF

@@ -4,7 +4,7 @@
   "description": "My jekyll blog template.",
   "main": "gulpfile.js",
   "scripts": {
-    "test": "test"
+    "start": "gulp"
   },
   "keywords": [
     "frontend",
