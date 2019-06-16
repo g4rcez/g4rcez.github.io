@@ -19,6 +19,7 @@ profile_picture: https://avatars1.githubusercontent.com/u/22946697?v=4
 markdown: kramdown
 highlighter: rouge
 permalink: /:title/
+comments: true
 
 # html minify
 compress_html:
