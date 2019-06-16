@@ -8,7 +8,7 @@ tags:
     - HTML5
     - CSS3
     - React
-description: "Montando componentes - A teoria de Hooks"
+description: "Criando um Currency Input"
 categories:
     - Web
 ---
