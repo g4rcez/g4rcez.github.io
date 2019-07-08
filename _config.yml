@@ -2,14 +2,14 @@
 title: Vandalvnl Blog
 description: "A little place to post something..."
 baseurl: "/"
-url: "https://vandalvnl.github.io"
+url: "https://g4rcez.github.io"
 
 # User settings
-username: vandalvnl
+username: g4rcez
 user_title: Allan Garcez - FullStack Developer
 email: allan.f.garcez@gmail.com
 twitter_username: ""
-github_username: vandalvnl
+github_username: g4rcez
 gplus_username: ""
 linkedin_public_url: allan-garcez # Example: For public profile 'www.linkedin.com/in/john-smith', 'john-smith' is your linkedin_public_url
 disqus_username: https-vandalvnl-github-io
@@ -48,7 +48,7 @@ links:
           key_trigger: 5
     section_2:
         - title: github
-          url: http://www.github.com/vandalvnl
+          url: http://www.github.com/g4rcez
           new_tab: true
           key_trigger: g
         - title: search
@@ -57,12 +57,10 @@ links:
 
 # projects in header index
 projects:
-    - name: CTF Platform
-      url: https://github.com/ctf-platform/ctf-api
     - name: sidekicker
-      url: https://github.com/vandalvnl/sidekicker
+      url: https://github.com/g4rcez/sidekicker
     - name: whatcripto
-      url: https://github.com/vandalvnl/whatcripto
+      url: https://github.com/g4rcez/whatcripto
 
 # exclude my node related stuff
 exclude: ["package.json", "src", "node_modules"]
